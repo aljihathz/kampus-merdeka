@@ -1,2 +1,2 @@
 # kampus-merdeka
-project pertama kelas kampus merdeka
+tugas6_Javascript
