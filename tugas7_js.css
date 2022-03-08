@@ -1,0 +1,22 @@
+body{
+    text-align: center;
+}
+
+table{
+
+    border: 1px solid;
+    
+}
+td{
+    background-color: rgb(70, 77, 77);
+    padding: 3px 4px;
+    color: rgb(241, 238, 234);
+}
+th{
+    color: blanchedalmond;
+    background-color: rgb(39, 35, 35);
+    padding: 10px;
+}
+.kiri{
+    text-align: left;
+}
