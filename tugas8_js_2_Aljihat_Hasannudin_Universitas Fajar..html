@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>tugas8_js-jquery</title>
+    <script src="./aset/jquery.js"></script>
+    <script>
+        $("document").ready(function () {
+            $("div.cat").click(function () {
+                scat.play();
+                $(this).css({
+                    background: "url('./aset/img/cat.jpeg')"
+
+                });
+            });
+            $("div.tiger").click(function () {
+                stiger.play();
+                $(this).css({
+                    background: "url('./aset/img/tiger.jpeg')"
+                });
+            });
+            $("div.flip1").click(function(){
+                    $(".isi1").slideToggle("slow");
+                })
+                $("div.flip2").click(function(){
+                    $(".isi2").slideToggle("slow");
+                })
+                $("div.flip3").click(function(){
+                    $(".isi3").slideToggle("slow");
+                })
+        });
+    </script>
+    <style type="text/css">
+        div.cat,div.tiger {
+
+            background: purple;
+            width: 200px;
+            height: 200px;
+            margin: 10px;
+            cursor: pointer;
+        }
+        .flip1, .flip2, .flip3{
+            border: 2px solid purple;
+            padding: 5px;
+            margin: 5px;
+            cursor: pointer;
+        }
+
+        .isi1, .isi2, .isi3{
+            text-align: justify;
+            display: none;
+        }
+    </style>
+
+</head>
+
+<body>
+    <center>
+        <h1>TUGAS bagian 1</h1>
+        <div class="cat"><audio id="scat" src="./aset/sound/cat.mp3">Kucing</audio></div>
+        <div class="tiger"><audio id="stiger" src="./aset/sound/tiger.mp3">Harimau</audio></div>
+        <hr />
+
+<!--text dicopy dari latihan 1 html-->
+        <h1>TUGAS bagian 2 </h1>
+
+        <div class="flip1">Company Profile</div>
+        <div class="isi1">  NF COMPUTER adalah bagian dari grup Nurul Fikri'<sup>s</sup> yang telah dipercaya oleh masyarakat Indonesia di bidang pendidikan dan peningkatan sumber daya manusia selama lebih dari 24 tahun. Alumni-alumninya telah berkiprah dan diakui kualitas kerja dan integritasnya oleh dunia usaha.
+            NF COMPUTER dirintis sejak tahun 1994 dan merupakan sebuah lembaga di bidang pendidikan dan pelatihan IT (Information Technology). Kami berkomitmen menjadi partner perusahaan Anda dalam mengembangkan kemampuan serta keahlian SDM di bidang IT. Dengan komitmen tersebut, kami mempersiapkan tim pengajar yang professional dan berpengalaman di bidang IT.
+            Di Era Industri 4.0 saat ini, teknologi informasi berkembang sangat cepat, oleh karena itu pengembangan sumber daya manusia di bidang IT menjadi sebuah kebutuhan yang perlu diprioritaskan. NF COMPUTER menjadi jawaban yang tepat atas kebutuhan pengembangan kompetensi IT. Sehingga kami selalu berusaha untuk terus berinovasi terhadap teknologi terbaru.
+           </div>
+        <div class="flip2">Visi & Misi</div>
+      
+       
+        <div class="isi2"> <b><i>Visi</i></b><br/>
+            Menjadi institusi pelatihan yang kompeten dan profesional di bidang pendidikan teknologi informasi dan komunikasi di berbagai wilayah indonesia.
+            <br/><br/><!-- break row / pindah baris -->    
+            <b><i>Misi</i></b><br/>
+            Membangun, memelihara dan mengembangkan institusi pelatihan bisnis berdaya saing tinggi, berkarakter profesional, kompeten, mengedepankan integritas dan tanggung jawab sosial, dengan mengembangkan dan menyediakan produk produk pendidikan dan pelatihan teknologi informasi dan komunikasi prima.    
+            </div>
+            <div class="flip3">Deskripsi Bisnis</div>
+        <div class="isi3"> NF COMPUTER menyelenggarakan Pelatihan dan Pendidikan di bidang Teknologi Informasi dan Komunikasi (IT Training) yang dibagi menjadi lima produk.
+            Pelatihan (training) ini dibagi dalam beberapa kategori produk yaitu:   
+            
+            <ul type="square"><!-- unorder list/ bulleting -->
+                <li><strong>Public Class</strong>, merupakan short course bidang TIK (Teknologi Informasi dan Komunikasi) yang berbasis Linux maupun Windows.</li>
+                <li><b>Exclusive Class</b>, merupakan paket training yang diberikan kepada customer dengan durasi 6-8 jam perhari dengan jumlah peserta minimal 2 orang dan pelaksanaan pelatihannya di NF Computer.</li>
+                <li><b>In House/In Company Training</b>, yaitu pelatihan TIK yang dikustomisasi untuk kebutuhan perusahaan-perusahaan.</li>  
+            </ul>
+            </p> 
+    
+            <h2>Paket Kursus</h2>
+            <ol type="A">
+                <li>Programming
+                    <ol type="i">
+                        <li>Python
+                            <ul type="square">
+                                <li>Python Fundamental</li>
+                                <li>Web Django Framework</li>
+                            </ul>    
+                        </li>
+                        <li>Java</li>
+                        <li>PHP</li>
+                    </ol>
+                </li>        
+                <li>Database
+                    <ol type="a">
+                        <li>MariaDB</li>
+                        <li>PostgreSQL
+                            <ul type="circle">
+                                <li>PostgreSQL Fundamental</li>
+                                <li>PostgreSQL Advance</li>
+                            </ul>    
+                        </li>
+                    </ol>    
+                </li>
+                <li>Networking</li>
+                <li>Design Grafis</li>
+                <li>Literasi Komputer</li>
+            </ol></div>
+
+        
+
+
+    </center>
+</body>
+
+</html>
